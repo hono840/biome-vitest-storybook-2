@@ -6,6 +6,8 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
+    "lint": "biome check --write --unsafe ./src/app",
+    "format": "biome format ./src/app",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
