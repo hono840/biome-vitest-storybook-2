@@ -1,15 +1,15 @@
 "use client";
 
-import React from "react";
+import React, { ChangeEvent, FC } from "react";
 
-type InputProps = {
+type Props = {
   value: string;
-  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  onChange: (e: ChangeEvent<HTMLInputElement>) => void;
   placeholder?: string;
   className?: string;
 };
 
-const Input: React.FC<InputProps> = ({
+const Input: FC<Props> = ({
   value,
   onChange,
   placeholder = "",
